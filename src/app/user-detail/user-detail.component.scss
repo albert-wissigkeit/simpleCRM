@@ -1,0 +1,42 @@
+.user-detail-header {
+    min-height: 250px;
+    background: #a7540b;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: top;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.user-details {
+    margin-left: 32px;
+    margin-bottom: 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.more-vert {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

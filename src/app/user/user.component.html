@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-content>
+    <table class="user-table">
+      <tr>
+        <th>Name</th>
+        <th>e-mail</th>
+        <th>City</th>
+      </tr>
+      <tr *ngFor="let user of allUsers" [routerLink]="['/user/' + user.id ]" >
+        <td>{{ user.firstName }} {{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.city }}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
+
+<button (click)="openDialog()" matTooltip="Add User" class="add-user-button" mat-fab color="primary"
+  [matTooltipPosition]="'above'">
+  <mat-icon>add</mat-icon>
+</button>

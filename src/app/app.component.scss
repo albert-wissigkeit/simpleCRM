@@ -1,0 +1,70 @@
+.mat-drawer-container2 {
+    height: 100vh;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.sidenav {
+    width: 300px;
+}
+
+.logo-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0 16px;
+    min-height: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        animation: rotatey 10s infinite linear;
+
+    }
+}
+
+mat-toolbar,
+mat-toolbar-row {
+    min-height: 56px;
+    height: 56px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        mat-icon {
+            margin-right: 16px;
+        }
+    }
+}
+
+.router-container {
+    padding-left: 56px;
+    padding-top: 16px;
+    padding-right: 56px;
+    padding-bottom: 16px;
+}
+
+@keyframes rotatey {
+    from {
+        transform: rotatey(0deg);
+    }
+    to {
+        transform: rotatey(360deg);
+    }
+}
